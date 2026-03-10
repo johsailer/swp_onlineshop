@@ -10,11 +10,16 @@ public class Anschrift {
 
     }
 
-    public Anschrift(String postleitzahl, String ort, String straße, String hausnummer){
+    public Anschrift (String postleitzahl, String ort, String straße, String hausnummer){
         this.postleitzahl = postleitzahl;
         this.ort = ort;
         this.straße = straße;
         this.hausnummer = hausnummer;
+    }
+
+    public String getAdresse(){
+        String anschrift = postleitzahl + " " +  ort + " " + straße + " " + hausnummer;
+        return anschrift;
     }
 
 
