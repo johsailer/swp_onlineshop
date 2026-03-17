@@ -15,5 +15,7 @@ public class KundeMain {
         k3.setAnschrift(a_k3);
         k3.kundenProfilAnzeigen();
 
+        Warenkorb w_k1 = new Warenkorb(1,k1);
+
     }
 }
