@@ -16,6 +16,9 @@ public class Bestellung {
     public void produktHinzufuegen(Produkt p){
         this.warenkorb.add(p);
     }
+    public void produktEntfernen(Produkt p){
+        this.warenkorb.remove(p);
+    }
     public void rechnungsDrucken(){
         kunde.kundenProfilAnzeigen();
         double gesSum = 0;
