@@ -16,6 +16,11 @@ public class KundeMain {
         k3.kundenProfilAnzeigen();
 
         Produkt p1 = new Produkt("Handschuhe", 18.99,1.2);
+        Produkt p2 = new Produkt("Laptop", 999.99,1.2);
+        Produkt p3 = new Produkt("schuhe", 88.99,1.2);
+        Produkt p4 = new Produkt("Tassen", 9,1.2);
+        Produkt p5 = new Produkt("Handwärmer", 16,1.2);
+
 
         Bestellung b_k1 = new Bestellung(1,k1);
         b_k1.produktHinzufuegen(p1);
@@ -23,5 +28,8 @@ public class KundeMain {
 
         b_k1.produktEntfernen(p1);
         b_k1.rechnungsDrucken();
+
+
+
     }
 }
