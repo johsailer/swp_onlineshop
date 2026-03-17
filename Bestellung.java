@@ -2,12 +2,12 @@ package swp_2aHWII.htlInn.oop.onlineshop.swp_onlineshop;
 
 import java.util.ArrayList;
 
-public class Warenkorb {
+public class Bestellung {
     private int bestellNummer;
     private Kunde kunde;
     private ArrayList<Produkt> warenkorb;
 
-    public Warenkorb(int bestellNummer, Kunde kunde){
+    public Bestellung(int bestellNummer, Kunde kunde){
         this.bestellNummer = bestellNummer;
         this.kunde = kunde;
         this.warenkorb = new ArrayList<>();
@@ -22,7 +22,7 @@ public class Warenkorb {
         for ( Produkt p : warenkorb){
             gesSum += p.getNettopreisPreis();
         }
-        System.out.println(gesSum);
+        System.out.println(" "+ gesSum+"€");
     }
 
 }
